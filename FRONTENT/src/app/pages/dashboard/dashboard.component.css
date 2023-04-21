@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------
+  # Dashboard
+  --------------------------------------------------------------*/
+.pagetitle h1 {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.5;
+  color: white;
+}
+
+/*-------------Date----------------- */
+.date-indicator {
+  font-weight: 300;
+  font-size: x-large;
+  line-height: 1.5;
+  color: white;
+  text-align: right;
+}
+
+/*-------------button Today,month,year-------------*/
+
+/*Màn hình thu nhỏ*/
+@media (max-width: 490px) {
+  /*Phần button*/
+  .buttonwrapper {
+    border: none;
+    margin-bottom: 20px;
+    list-style: none;
+    display: inline-flex;
+    width: auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.13);
+  }
+
+    .buttonwrapper .nav-link {
+      border: none;
+      display: block;
+      float: left;
+      margin-left: 10px;
+      height: 35px;
+      width: 70px;
+      color: #FFFFFF;
+      opacity: 1;
+      font-size: 10px;
+      line-height: 1.5;
+      text-align: center;
+      padding: 8px 10px;
+      margin-bottom: 0;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+      .buttonwrapper .nav-link.active {
+        background-color: #182142;
+      }
+
+      .buttonwrapper .nav-link:first-child {
+        margin-left: 0;
+      }
+
+      .buttonwrapper .nav-link:hover {
+        background-color: #182142;
+        border-radius: 30px;
+      }
+
+  .date-indicator {
+    font-weight: 300;
+    font-size: large;
+    line-height: 1.5;
+    color: white;
+    text-align: right;
+  }
+}
+
+@media (min-width: 491px) {
+  /*Phần button*/
+  .buttonwrapper {
+    border: none;
+    margin-bottom: 20px;
+    list-style: none;
+    display: inline-flex;
+    width: auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.13);
+  }
+
+    .buttonwrapper .nav-link {
+      border: none;
+      display: block;
+      float: left;
+      margin-left: 35px;
+      height: 35px;
+      width: 80px;
+      color: #FFFFFF;
+      opacity: 1;
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: center;
+      padding: 8px 10px;
+      margin-bottom: 0;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+      .buttonwrapper .nav-link.active {
+        background-color: #182142;
+      }
+
+      .buttonwrapper .nav-link:first-child {
+        margin-left: 0;
+      }
+
+      .buttonwrapper .nav-link:hover {
+        background-color: #182142;
+        border-radius: 30px;
+      }
+}
+/*------------------------------------------------*/
+

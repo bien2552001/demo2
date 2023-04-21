@@ -1,0 +1,96 @@
+<main id="main" class="main">
+  <div class="pagetitle">
+    <h1>Energy Dashboard</h1>
+  </div>
+  <section class="section dashboard">
+    <div class="row">
+      <div class="col-xl-7 col-md-7 col-sm-12 my-3">
+        <nav>
+          <div class="nav nav-tabs buttonwrapper" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="today" data-bs-toggle="tab" data-bs-target="#nav-day" type="button" role="tab" aria-controls="nav-day" aria-selected="true">TODAY</button>
+            <button class="nav-link" id="week" data-bs-toggle="tab" data-bs-target="#nav-week" type="button" role="tab" aria-controls="nav-week" aria-selected="false">WEEK</button>
+            <button class="nav-link" id="month" data-bs-toggle="tab" data-bs-target="#nav-month" type="button" role="tab" aria-controls="nav-month" aria-selected="false">MONTH</button>
+            <button class="nav-link" id="year" data-bs-toggle="tab" data-bs-target="#nav-year" type="button" role="tab" aria-controls="nav-year" aria-selected="false">YEAR</button>
+          </div>
+        </nav>
+      </div>
+      <div [ngClass]="'col-md-5 date-indicator'" id="date">Date</div>
+
+
+      <div class="tab-content" id="nav-tabContent">
+        <!---------------------------------------------------------------------To Day------------------------------------------------------------------------------->
+
+        <div class="tab-pane fade show active today-content" id="nav-day" role="tabpanel" aria-labelledby="today">
+          <div className="row mt-3 db-chart">
+            <div class="row mb-2">
+              <div class="col-xl-12 col-md-12 col-sm-12" id="today">
+                <div class="card">
+                  <app-asum-day></app-asum-day>
+                  <!--<div class="my-2">
+                    <app-asum-week></app-asum-week>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---------------------------------------------------------------------Week------------------------------------------------------------------------------->
+
+        <div class="tab-pane fade" id="nav-week" role="tabpanel" aria-labelledby="week">
+          weekkkkkkkkkkk
+          <div className="row mt-3 db-chart">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-xxl-12 col-md-12 col-sm-12">
+                  <div class="card">
+                    <app-asum-week></app-asum-week>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <!---------------------------------------------------------------------Month------------------------------------------------------------------------------->
+
+        <div class="tab-pane fade" id="nav-month" role="tabpanel" aria-labelledby="month">
+          monthhhhhhhhhhhhhhh
+          <div className="row mt-3 db-chart">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-xxl-4 col-md-6 col-sm-12">
+                  <div class="card info-card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="today">Current</h5>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!---------------------------------------------------------------------Year------------------------------------------------------------------------------->
+
+        <div class="tab-pane fade" id="nav-year" role="tabpanel" aria-labelledby="year">
+          yearrrrrr
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+
